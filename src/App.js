@@ -7,10 +7,10 @@ class App extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-xl-6">
+          <div className="col-md-6">
             <NewPost/>
           </div>
-          <div className="col-xl-6">
+          <div className="col-md-6">
          Display posts
           </div>
         </div>
