@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import '../node_modules/bulma/css/bulma.css';
 
 export default class NewPost extends Component{
     state = {
@@ -28,7 +28,7 @@ export default class NewPost extends Component{
     render()
     {
         return(
-            <div>
+            <div >
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <input type="text" 
@@ -48,8 +48,8 @@ export default class NewPost extends Component{
                         value={this.state.body}/>
                     </div>
                     <div className="form-group">
-                        <button type="submit" className="btn btn-primary">Add new post</button>
-                        <button type="reset" className="btn btn-warning" onReset={ () =>  this.handleReset()} >Reset form</button>
+                        <button type="submit" className="button is-primary is-rounded">Add new post</button>
+                        <button type="reset" className="button is-primary is-rounded" onReset={ () =>  this.handleReset()} >Reset form</button>
                         </div>
                 </form>
             </div>
