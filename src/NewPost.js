@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
-import CreatePost from './containers/CreatePost';
-import PostList from './containers/PostList'
+
 
 export default class NewPost extends Component{
     state = {
         title: '',
         body: '',
     }
-    }
+    
     handleInputChange =event=>{
         this.setState({[event.target.name]:event.target.value});
     }
@@ -19,10 +18,10 @@ export default class NewPost extends Component{
     }
     handleSubmit=event=>{
         event.preventDefault();
-        if(this.state.title.trin()&& this.state.body.trin())
-        {
+        if (this.state.title.trim() && this.state.body.trim()) {
             console.log(this.state);
             this.props.onAddPost(this.state);
+          
             this.handleReset();
         }
     }

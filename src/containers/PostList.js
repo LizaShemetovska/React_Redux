@@ -6,7 +6,7 @@ import { deletePost } from '../actions';
 function PostList({ posts, onDelete }) {
     console.log(posts);
     return (
-        <div>
+        <div>cd
             {
                 posts.map(post => { return (<Post post={post} onDelete={onDelete} key={post.id} />); })
             }
